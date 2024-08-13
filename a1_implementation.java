@@ -17,7 +17,7 @@ public class a1_implementation {
 	public a1_implementation() {
 		this.root = Create_Tree(null);
 	}
-
+// 10 true 20 true 30 false true 50 false false true 60 false false true 70 true 90 false false true 110 false false
 	private Node Create_Tree(Node parent) {
 		int item = sc.nextInt();
 		Node nn = new Node(item);
