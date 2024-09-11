@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class a16_construct_tree_from_postorder_and_inorder 
+public class a15_construct_tree_from_postorder_and_inorder 
 {
     public static class TreeNode 
     {

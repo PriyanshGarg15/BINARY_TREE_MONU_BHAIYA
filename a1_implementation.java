@@ -1,4 +1,4 @@
-import java.util.Scanner;
+import java.util.*;
 public class a1_implementation {
 	public class Node {
 		int data;
@@ -17,7 +17,8 @@ public class a1_implementation {
 	public a1_implementation() {
 		this.root = Create_Tree(null);
 	}
-// 10 true 20 true 30 false true 50 false false true 60 false false true 70 true 90 false false true 110 false false
+	// 10 true 20 true 30 false true 50 false false true 60 false false true 70 true 90 false false true 110 false false
+	// preorder way of making tree with preorder string given to it !
 	private Node Create_Tree(Node parent) {
 		int item = sc.nextInt();
 		Node nn = new Node(item);
@@ -26,7 +27,6 @@ public class a1_implementation {
 			nn.left = Create_Tree(nn);
 		}
 		boolean hrc = sc.nextBoolean();
-
 		if (hrc == true) {
 			nn.right = Create_Tree(nn);
 		}
@@ -70,7 +70,6 @@ public class a1_implementation {
 	}
 
 	private boolean find(Node node, int item) {
-		// TODO Auto-generated method stub
 		if (node == null) {
 			return false;
 		}
@@ -89,7 +88,6 @@ public class a1_implementation {
 	}
 
 	private int min(Node node) {
-		// TODO Auto-generated method stub
 		if (node == null) {
 			return Integer.MAX_VALUE;
 		}
@@ -106,7 +104,6 @@ public class a1_implementation {
 	}
 
 	private int CountNode(Node node) {
-		// TODO Auto-generated method stub
 		if (node == null) {
 			return 0;
 		}
@@ -122,7 +119,6 @@ public class a1_implementation {
 	}
 
 	private int ht(Node node) {
-		// TODO Auto-generated method stub
 		if (node == null) {
 			return -1;
 		}
@@ -139,7 +135,6 @@ public class a1_implementation {
 	}
 
 	private void PreOrder(Node node) {
-		// TODO Auto-generated method stub
 		if (node == null) {
 			return;
 		}
@@ -156,7 +151,6 @@ public class a1_implementation {
 	}
 
 	private void PostOrder(Node node) {
-		// TODO Auto-generated method stub
 		if (node == null) {
 			return;
 		}
@@ -173,7 +167,6 @@ public class a1_implementation {
 	}
 
 	private void InOrder(Node node) {
-		// TODO Auto-generated method stub
 		if (node == null) {
 			return;
 		}

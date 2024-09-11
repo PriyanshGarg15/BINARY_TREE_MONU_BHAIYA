@@ -1,4 +1,4 @@
-public class a17_construct_tree_from_preorder_and_postorder {
+public class a16_construct_tree_from_preorder_and_postorder {
     
     public static class TreeNode {
         int val;
